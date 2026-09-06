@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { signIn } from '../lib/authClient'
+import { signIn, useSession } from '../lib/authClient'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -9,6 +9,7 @@ export default function Login() {
   const [submitting, setSubmitting] = useState(false)
   const navigate = useNavigate()
   const location = useLocation()
+  const { refetch: refetchSession } = useSession()
   const from = location.state?.from?.pathname || '/'
 
   async function handleSubmit(e) {
@@ -16,11 +17,16 @@ export default function Login() {
     setSubmitting(true)
     setError(null)
     const { error: signInError } = await signIn.email({ email, password })
-    setSubmitting(false)
     if (signInError) {
+      setSubmitting(false)
       setError(signInError.message || 'Could not sign in')
       return
     }
+    // signIn only kicks off a background session refresh; RequireAuth reads the
+    // reactive session synchronously, so wait for it to actually resolve before
+    // navigating back to a protected route, or it redirects straight to /login again.
+    await refetchSession()
+    setSubmitting(false)
     navigate(from, { replace: true })
   }
 

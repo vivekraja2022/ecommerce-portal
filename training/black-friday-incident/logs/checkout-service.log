@@ -1,0 +1,117 @@
+2026-07-25T00:05:10.000Z [INFO] checkout-service order_id=ORD-10400 msg="order received" subtotal=59.99 discounts=[10]
+2026-07-25T00:05:12.000Z [INFO] checkout-service order_id=ORD-10400 msg="discount applied" total=53.99
+2026-07-25T00:05:14.000Z [INFO] checkout-service order_id=ORD-10400 msg="order confirmed" total=53.99
+2026-07-25T00:42:13.000Z [INFO] checkout-service order_id=ORD-10401 msg="order received" subtotal=120.50 discounts=[]
+2026-07-25T00:42:15.000Z [INFO] checkout-service order_id=ORD-10401 msg="discount applied" total=120.50
+2026-07-25T00:42:17.000Z [INFO] checkout-service order_id=ORD-10401 msg="order confirmed" total=120.50
+2026-07-25T01:10:16.000Z [INFO] checkout-service order_id=ORD-10402 msg="order received" subtotal=34.00 discounts=[]
+2026-07-25T01:10:18.000Z [INFO] checkout-service order_id=ORD-10402 msg="discount applied" total=34.00
+2026-07-25T01:10:20.000Z [INFO] checkout-service order_id=ORD-10402 msg="order confirmed" total=34.00
+2026-07-25T01:47:19.000Z [INFO] checkout-service order_id=ORD-10403 msg="order received" subtotal=210.75 discounts=[]
+2026-07-25T01:47:21.000Z [INFO] checkout-service order_id=ORD-10403 msg="discount applied" total=210.75
+2026-07-25T01:47:23.000Z [INFO] checkout-service order_id=ORD-10403 msg="order confirmed" total=210.75
+2026-07-25T02:03:22.000Z [INFO] checkout-service order_id=ORD-10404 msg="order received" subtotal=88.20 discounts=[]
+2026-07-25T02:03:24.000Z [INFO] checkout-service order_id=ORD-10404 msg="discount applied" total=88.20
+2026-07-25T02:03:26.000Z [INFO] checkout-service order_id=ORD-10404 msg="order confirmed" total=88.20
+2026-07-25T02:28:25.000Z [INFO] checkout-service order_id=ORD-10405 msg="order received" subtotal=45.49 discounts=[10]
+2026-07-25T02:28:27.000Z [INFO] checkout-service order_id=ORD-10405 msg="discount applied" total=40.94
+2026-07-25T02:28:29.000Z [INFO] checkout-service order_id=ORD-10405 msg="order confirmed" total=40.94
+2026-07-25T02:55:28.000Z [INFO] checkout-service order_id=ORD-10406 msg="order received" subtotal=15.99 discounts=[]
+2026-07-25T02:55:30.000Z [INFO] checkout-service order_id=ORD-10406 msg="discount applied" total=15.99
+2026-07-25T02:55:32.000Z [INFO] checkout-service order_id=ORD-10406 msg="order confirmed" total=15.99
+2026-07-25T03:12:31.000Z [INFO] checkout-service order_id=ORD-10407 msg="order received" subtotal=300.00 discounts=[]
+2026-07-25T03:12:33.000Z [INFO] checkout-service order_id=ORD-10407 msg="discount applied" total=300.00
+2026-07-25T03:12:35.000Z [INFO] checkout-service order_id=ORD-10407 msg="order confirmed" total=300.00
+2026-07-25T03:26:44.000Z [INFO] checkout-service order_id=ORD-10417 msg="order received" subtotal=64.50 discounts=[]
+2026-07-25T03:26:46.000Z [INFO] checkout-service order_id=ORD-10417 msg="discount applied" total=64.50
+2026-07-25T03:26:48.000Z [ERROR] checkout-service order_id=ORD-10417 msg="payment declined: insufficient_funds"
+2026-07-25T03:40:34.000Z [INFO] checkout-service order_id=ORD-10408 msg="order received" subtotal=72.10 discounts=[]
+2026-07-25T03:40:36.000Z [INFO] checkout-service order_id=ORD-10408 msg="discount applied" total=72.10
+2026-07-25T03:40:38.000Z [INFO] checkout-service order_id=ORD-10408 msg="order confirmed" total=72.10
+2026-07-25T04:01:37.000Z [INFO] checkout-service order_id=ORD-10409 msg="order received" subtotal=19.99 discounts=[]
+2026-07-25T04:01:39.000Z [INFO] checkout-service order_id=ORD-10409 msg="discount applied" total=19.99
+2026-07-25T04:01:41.000Z [INFO] checkout-service order_id=ORD-10409 msg="order confirmed" total=19.99
+2026-07-25T04:22:40.000Z [INFO] checkout-service order_id=ORD-10410 msg="order received" subtotal=145.33 discounts=[10]
+2026-07-25T04:22:42.000Z [INFO] checkout-service order_id=ORD-10410 msg="discount applied" total=130.80
+2026-07-25T04:22:44.000Z [INFO] checkout-service order_id=ORD-10410 msg="order confirmed" total=130.80
+2026-07-25T04:38:43.000Z [INFO] checkout-service order_id=ORD-10411 msg="order received" subtotal=61.75 discounts=[]
+2026-07-25T04:38:45.000Z [INFO] checkout-service order_id=ORD-10411 msg="discount applied" total=61.75
+2026-07-25T04:38:47.000Z [INFO] checkout-service order_id=ORD-10411 msg="order confirmed" total=61.75
+2026-07-25T04:51:46.000Z [INFO] checkout-service order_id=ORD-10412 msg="order received" subtotal=27.40 discounts=[]
+2026-07-25T04:51:48.000Z [INFO] checkout-service order_id=ORD-10412 msg="discount applied" total=27.40
+2026-07-25T04:51:50.000Z [INFO] checkout-service order_id=ORD-10412 msg="order confirmed" total=27.40
+2026-07-25T05:06:49.000Z [INFO] checkout-service order_id=ORD-10413 msg="order received" subtotal=99.00 discounts=[]
+2026-07-25T05:06:51.000Z [INFO] checkout-service order_id=ORD-10413 msg="discount applied" total=99.00
+2026-07-25T05:06:53.000Z [INFO] checkout-service order_id=ORD-10413 msg="order confirmed" total=99.00
+2026-07-25T05:14:52.000Z [INFO] checkout-service order_id=ORD-10414 msg="order received" subtotal=54.60 discounts=[]
+2026-07-25T05:14:54.000Z [INFO] checkout-service order_id=ORD-10414 msg="discount applied" total=54.60
+2026-07-25T05:14:56.000Z [INFO] checkout-service order_id=ORD-10414 msg="order confirmed" total=54.60
+2026-07-25T05:22:55.000Z [INFO] checkout-service order_id=ORD-10415 msg="order received" subtotal=183.25 discounts=[10]
+2026-07-25T05:22:57.000Z [INFO] checkout-service order_id=ORD-10415 msg="discount applied" total=164.93
+2026-07-25T05:22:59.000Z [INFO] checkout-service order_id=ORD-10415 msg="order confirmed" total=164.93
+2026-07-25T05:31:58.000Z [INFO] checkout-service order_id=ORD-10416 msg="order received" subtotal=41.11 discounts=[]
+2026-07-25T05:32:00.000Z [INFO] checkout-service order_id=ORD-10416 msg="discount applied" total=41.11
+2026-07-25T05:32:02.000Z [INFO] checkout-service order_id=ORD-10416 msg="order confirmed" total=41.11
+2026-07-25T05:40:12.000Z [INFO] checkout-service order_id=ORD-10418 msg="order received" subtotal=50.07 discounts=[20,5]
+2026-07-25T05:40:14.000Z [INFO] checkout-service order_id=ORD-10418 msg="discount applied" total=38.06
+2026-07-25T05:40:16.000Z [ERROR] checkout-service order_id=ORD-10418 msg="payment declined: amount_mismatch" total=38.06
+2026-07-25T05:41:05.000Z [INFO] checkout-service order_id=ORD-10419 msg="order received" subtotal=58.00 discounts=[20]
+2026-07-25T05:41:07.000Z [INFO] checkout-service order_id=ORD-10419 msg="discount applied" total=46.40
+2026-07-25T05:41:09.000Z [INFO] checkout-service order_id=ORD-10419 msg="order confirmed" total=46.40
+2026-07-25T05:42:13.000Z [INFO] checkout-service order_id=ORD-10420 msg="order received" subtotal=58.11 discounts=[20,5]
+2026-07-25T05:42:15.000Z [INFO] checkout-service order_id=ORD-10420 msg="discount applied" total=44.17
+2026-07-25T05:42:17.000Z [ERROR] checkout-service order_id=ORD-10420 msg="payment declined: amount_mismatch" total=44.17
+2026-07-25T05:43:40.000Z [INFO] checkout-service order_id=ORD-10421 msg="order received" subtotal=74.85 discounts=[]
+2026-07-25T05:43:42.000Z [INFO] checkout-service order_id=ORD-10421 msg="discount applied" total=74.85
+2026-07-25T05:43:44.000Z [INFO] checkout-service order_id=ORD-10421 msg="order confirmed" total=74.85
+2026-07-25T05:44:51.000Z [INFO] checkout-service order_id=ORD-10422 msg="order received" subtotal=66.12 discounts=[20,5]
+2026-07-25T05:44:53.000Z [INFO] checkout-service order_id=ORD-10422 msg="discount applied" total=50.26
+2026-07-25T05:44:55.000Z [ERROR] checkout-service order_id=ORD-10422 msg="payment declined: amount_mismatch" total=50.26
+2026-07-25T05:46:02.000Z [INFO] checkout-service order_id=ORD-10423 msg="order received" subtotal=39.99 discounts=[10]
+2026-07-25T05:46:04.000Z [INFO] checkout-service order_id=ORD-10423 msg="discount applied" total=35.99
+2026-07-25T05:46:06.000Z [INFO] checkout-service order_id=ORD-10423 msg="order confirmed" total=35.99
+2026-07-25T05:47:28.000Z [INFO] checkout-service order_id=ORD-10424 msg="order received" subtotal=74.13 discounts=[20,5]
+2026-07-25T05:47:30.000Z [INFO] checkout-service order_id=ORD-10424 msg="discount applied" total=56.33
+2026-07-25T05:47:32.000Z [ERROR] checkout-service order_id=ORD-10424 msg="payment declined: amount_mismatch" total=56.33
+2026-07-25T05:48:55.000Z [INFO] checkout-service order_id=ORD-10425 msg="order received" subtotal=61.20 discounts=[]
+2026-07-25T05:48:57.000Z [INFO] checkout-service order_id=ORD-10425 msg="discount applied" total=61.20
+2026-07-25T05:48:59.000Z [INFO] checkout-service order_id=ORD-10425 msg="order confirmed" total=61.20
+2026-07-25T05:50:09.000Z [INFO] checkout-service order_id=ORD-10426 msg="order received" subtotal=82.14 discounts=[20,5]
+2026-07-25T05:50:11.000Z [INFO] checkout-service order_id=ORD-10426 msg="discount applied" total=62.42
+2026-07-25T05:50:13.000Z [ERROR] checkout-service order_id=ORD-10426 msg="payment declined: amount_mismatch" total=62.42
+2026-07-25T05:51:33.000Z [INFO] checkout-service order_id=ORD-10427 msg="order received" subtotal=27.99 discounts=[20]
+2026-07-25T05:51:35.000Z [INFO] checkout-service order_id=ORD-10427 msg="discount applied" total=22.39
+2026-07-25T05:51:37.000Z [INFO] checkout-service order_id=ORD-10427 msg="order confirmed" total=22.39
+2026-07-25T05:52:47.000Z [INFO] checkout-service order_id=ORD-10428 msg="order received" subtotal=90.18 discounts=[20,5]
+2026-07-25T05:52:49.000Z [INFO] checkout-service order_id=ORD-10428 msg="discount applied" total=68.53
+2026-07-25T05:52:51.000Z [ERROR] checkout-service order_id=ORD-10428 msg="payment declined: amount_mismatch" total=68.53
+2026-07-25T05:54:06.000Z [INFO] checkout-service order_id=ORD-10429 msg="order received" subtotal=300.00 discounts=[]
+2026-07-25T05:54:08.000Z [INFO] checkout-service order_id=ORD-10429 msg="discount applied" total=300.00
+2026-07-25T05:54:10.000Z [INFO] checkout-service order_id=ORD-10429 msg="order confirmed" total=300.00
+2026-07-25T05:55:21.000Z [INFO] checkout-service order_id=ORD-10430 msg="order received" subtotal=98.32 discounts=[20,5]
+2026-07-25T05:55:23.000Z [INFO] checkout-service order_id=ORD-10430 msg="discount applied" total=74.73
+2026-07-25T05:55:25.000Z [ERROR] checkout-service order_id=ORD-10430 msg="payment declined: amount_mismatch" total=74.73
+2026-07-25T05:56:40.000Z [INFO] checkout-service order_id=ORD-10431 msg="order received" subtotal=45.00 discounts=[10]
+2026-07-25T05:56:42.000Z [INFO] checkout-service order_id=ORD-10431 msg="discount applied" total=40.50
+2026-07-25T05:56:44.000Z [INFO] checkout-service order_id=ORD-10431 msg="order confirmed" total=40.50
+2026-07-25T05:57:58.000Z [INFO] checkout-service order_id=ORD-10432 msg="order received" subtotal=106.36 discounts=[20,5]
+2026-07-25T05:58:00.000Z [INFO] checkout-service order_id=ORD-10432 msg="discount applied" total=80.84
+2026-07-25T05:58:02.000Z [ERROR] checkout-service order_id=ORD-10432 msg="payment declined: amount_mismatch" total=80.84
+2026-07-25T05:59:15.000Z [INFO] checkout-service order_id=ORD-10433 msg="order received" subtotal=68.40 discounts=[20]
+2026-07-25T05:59:17.000Z [INFO] checkout-service order_id=ORD-10433 msg="discount applied" total=54.72
+2026-07-25T05:59:19.000Z [INFO] checkout-service order_id=ORD-10433 msg="order confirmed" total=54.72
+2026-07-25T06:01:04.000Z [INFO] checkout-service order_id=ORD-10434 msg="order received" subtotal=54.20 discounts=[]
+2026-07-25T06:01:06.000Z [INFO] checkout-service order_id=ORD-10434 msg="discount applied" total=54.20
+2026-07-25T06:01:08.000Z [INFO] checkout-service order_id=ORD-10434 msg="order confirmed" total=54.20
+2026-07-25T06:02:30.000Z [INFO] checkout-service order_id=ORD-10435 msg="order received" subtotal=114.37 discounts=[20,5]
+2026-07-25T06:02:32.000Z [INFO] checkout-service order_id=ORD-10435 msg="discount applied" total=86.93
+2026-07-25T06:02:34.000Z [ERROR] checkout-service order_id=ORD-10435 msg="payment declined: amount_mismatch" total=86.93
+2026-07-25T06:04:11.000Z [INFO] checkout-service order_id=ORD-10436 msg="order received" subtotal=33.50 discounts=[10]
+2026-07-25T06:04:13.000Z [INFO] checkout-service order_id=ORD-10436 msg="discount applied" total=30.15
+2026-07-25T06:04:15.000Z [INFO] checkout-service order_id=ORD-10436 msg="order confirmed" total=30.15
+2026-07-25T06:06:45.000Z [INFO] checkout-service order_id=ORD-10437 msg="order received" subtotal=122.39 discounts=[20,5]
+2026-07-25T06:06:47.000Z [INFO] checkout-service order_id=ORD-10437 msg="discount applied" total=93.01
+2026-07-25T06:06:49.000Z [ERROR] checkout-service order_id=ORD-10437 msg="payment declined: amount_mismatch" total=93.01
+2026-07-25T06:08:02.000Z [INFO] checkout-service order_id=ORD-10438 msg="order received" subtotal=90.00 discounts=[]
+2026-07-25T06:08:04.000Z [INFO] checkout-service order_id=ORD-10438 msg="discount applied" total=90.00
+2026-07-25T06:08:06.000Z [INFO] checkout-service order_id=ORD-10438 msg="order confirmed" total=90.00

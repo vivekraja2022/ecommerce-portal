@@ -2,6 +2,8 @@ import { Router } from 'express'
 import { randomUUID } from 'node:crypto'
 import { pool } from '../db/pool.js'
 import { requireAuth } from '../middleware/requireAuth.js'
+import { logger } from '../otel/logger.js'
+import { ordersPlacedCounter, orderRevenueCounter, checkoutFailedCounter } from '../otel/metrics.js'
 
 const router = Router()
 
@@ -99,6 +101,10 @@ router.post('/', async (req, res, next) => {
 
     await client.query('COMMIT')
 
+    ordersPlacedCounter.add(1)
+    orderRevenueCounter.add(total)
+    logger.info('order_placed', { order_id: orderId, user_id: req.user.id, total, item_count: orderItems.length })
+
     res.status(201).json({
       id: orderId,
       placedAt: new Date().toISOString(),
@@ -113,6 +119,9 @@ router.post('/', async (req, res, next) => {
     })
   } catch (err) {
     await client.query('ROLLBACK')
+    const reason = err.status === 409 ? 'insufficient_stock' : err.status === 400 ? 'validation_error' : 'server_error'
+    checkoutFailedCounter.add(1, { reason })
+    logger.warn('checkout_failed', { reason, user_id: req.user.id, message: err.message })
     next(err)
   } finally {
     client.release()

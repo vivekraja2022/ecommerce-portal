@@ -1,0 +1,39 @@
+2026-07-25T00:05:13.000Z [INFO] payment-gateway order_id=ORD-10400 msg="charge authorized" amount=53.99
+2026-07-25T00:42:16.000Z [INFO] payment-gateway order_id=ORD-10401 msg="charge authorized" amount=120.50
+2026-07-25T01:10:19.000Z [INFO] payment-gateway order_id=ORD-10402 msg="charge authorized" amount=34.00
+2026-07-25T01:47:22.000Z [INFO] payment-gateway order_id=ORD-10403 msg="charge authorized" amount=210.75
+2026-07-25T02:03:25.000Z [INFO] payment-gateway order_id=ORD-10404 msg="charge authorized" amount=88.20
+2026-07-25T02:28:28.000Z [INFO] payment-gateway order_id=ORD-10405 msg="charge authorized" amount=40.94
+2026-07-25T02:55:31.000Z [INFO] payment-gateway order_id=ORD-10406 msg="charge authorized" amount=15.99
+2026-07-25T03:12:34.000Z [INFO] payment-gateway order_id=ORD-10407 msg="charge authorized" amount=300.00
+2026-07-25T03:26:47.000Z [ERROR] payment-gateway order_id=ORD-10417 msg="charge declined: insufficient_funds" amount=64.50
+2026-07-25T03:40:37.000Z [INFO] payment-gateway order_id=ORD-10408 msg="charge authorized" amount=72.10
+2026-07-25T04:01:40.000Z [INFO] payment-gateway order_id=ORD-10409 msg="charge authorized" amount=19.99
+2026-07-25T04:22:43.000Z [INFO] payment-gateway order_id=ORD-10410 msg="charge authorized" amount=130.80
+2026-07-25T04:38:46.000Z [INFO] payment-gateway order_id=ORD-10411 msg="charge authorized" amount=61.75
+2026-07-25T04:51:49.000Z [INFO] payment-gateway order_id=ORD-10412 msg="charge authorized" amount=27.40
+2026-07-25T05:06:52.000Z [INFO] payment-gateway order_id=ORD-10413 msg="charge authorized" amount=99.00
+2026-07-25T05:14:55.000Z [INFO] payment-gateway order_id=ORD-10414 msg="charge authorized" amount=54.60
+2026-07-25T05:22:58.000Z [INFO] payment-gateway order_id=ORD-10415 msg="charge authorized" amount=164.93
+2026-07-25T05:32:01.000Z [INFO] payment-gateway order_id=ORD-10416 msg="charge authorized" amount=41.11
+2026-07-25T05:40:15.000Z [ERROR] payment-gateway order_id=ORD-10418 msg="charge rejected: amount_mismatch" expected=38.05 received=38.06 diff=+0.01
+2026-07-25T05:41:08.000Z [INFO] payment-gateway order_id=ORD-10419 msg="charge authorized" amount=46.40
+2026-07-25T05:42:16.000Z [ERROR] payment-gateway order_id=ORD-10420 msg="charge rejected: amount_mismatch" expected=44.16 received=44.17 diff=+0.01
+2026-07-25T05:43:43.000Z [INFO] payment-gateway order_id=ORD-10421 msg="charge authorized" amount=74.85
+2026-07-25T05:44:54.000Z [ERROR] payment-gateway order_id=ORD-10422 msg="charge rejected: amount_mismatch" expected=50.25 received=50.26 diff=+0.01
+2026-07-25T05:46:05.000Z [INFO] payment-gateway order_id=ORD-10423 msg="charge authorized" amount=35.99
+2026-07-25T05:47:31.000Z [ERROR] payment-gateway order_id=ORD-10424 msg="charge rejected: amount_mismatch" expected=56.34 received=56.33 diff=-0.01
+2026-07-25T05:48:58.000Z [INFO] payment-gateway order_id=ORD-10425 msg="charge authorized" amount=61.20
+2026-07-25T05:50:12.000Z [ERROR] payment-gateway order_id=ORD-10426 msg="charge rejected: amount_mismatch" expected=62.43 received=62.42 diff=-0.01
+2026-07-25T05:51:36.000Z [INFO] payment-gateway order_id=ORD-10427 msg="charge authorized" amount=22.39
+2026-07-25T05:52:50.000Z [ERROR] payment-gateway order_id=ORD-10428 msg="charge rejected: amount_mismatch" expected=68.54 received=68.53 diff=-0.01
+2026-07-25T05:54:09.000Z [INFO] payment-gateway order_id=ORD-10429 msg="charge authorized" amount=300.00
+2026-07-25T05:55:24.000Z [ERROR] payment-gateway order_id=ORD-10430 msg="charge rejected: amount_mismatch" expected=74.72 received=74.73 diff=+0.01
+2026-07-25T05:56:43.000Z [INFO] payment-gateway order_id=ORD-10431 msg="charge authorized" amount=40.50
+2026-07-25T05:58:01.000Z [ERROR] payment-gateway order_id=ORD-10432 msg="charge rejected: amount_mismatch" expected=80.83 received=80.84 diff=+0.01
+2026-07-25T05:59:18.000Z [INFO] payment-gateway order_id=ORD-10433 msg="charge authorized" amount=54.72
+2026-07-25T06:01:07.000Z [INFO] payment-gateway order_id=ORD-10434 msg="charge authorized" amount=54.20
+2026-07-25T06:02:33.000Z [ERROR] payment-gateway order_id=ORD-10435 msg="charge rejected: amount_mismatch" expected=86.92 received=86.93 diff=+0.01
+2026-07-25T06:04:14.000Z [INFO] payment-gateway order_id=ORD-10436 msg="charge authorized" amount=30.15
+2026-07-25T06:06:48.000Z [ERROR] payment-gateway order_id=ORD-10437 msg="charge rejected: amount_mismatch" expected=93.02 received=93.01 diff=-0.01
+2026-07-25T06:08:05.000Z [INFO] payment-gateway order_id=ORD-10438 msg="charge authorized" amount=90.00
