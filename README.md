@@ -37,6 +37,19 @@ src/            React app (pages, components, contexts, API client)
 | `npm run db:migrate` | Applies `server/db/schema.sql` |
 | `npm run db:seed` | Loads mock product data |
 
+## Continuous integration
+
+`.github/workflows/ci.yml` runs on every push/PR to `main`: lint + build, then the
+full Playwright E2E suite (`tests/e2e/`) headed under Xvfb against a dedicated test
+database. The E2E job needs two repository secrets (Settings → Secrets and variables →
+Actions), pointing at the same disposable test database used by `npm run test:e2e`
+locally (see `tests/e2e/README.md`) — **never** a dev/prod database, since the suite
+truncates it on every run:
+
+- `E2E_DATABASE_URL` — connection string for the dedicated Postgres test database
+- `E2E_BETTER_AUTH_SECRET` — a random secret for the test run only (does not need to
+  match your dev/prod `BETTER_AUTH_SECRET`)
+
 ## Deploying
 
 This app is one deployable unit: build the frontend, then run the same Express server to serve both the UI and the API.

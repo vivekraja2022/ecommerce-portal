@@ -39,6 +39,15 @@ Run a single spec/test the normal Playwright way once the test DB is set up, e.g
 `npm run test:e2e:setup && npx playwright test tests/e2e/specs/checkout.spec.js`.
 The suite runs against `.env.test` (a separate Neon DB, port 3100) — never the dev DB.
 
+**CI** (`.github/workflows/ci.yml`): on every push/PR to `main`, a `lint-and-build` job
+runs oxlint + `vite build`, then an `e2e` job runs the full Playwright suite headed
+under Xvfb, reading `DATABASE_URL`/`BETTER_AUTH_SECRET` from the `E2E_DATABASE_URL`/
+`E2E_BETTER_AUTH_SECRET` repo secrets instead of `.env.test` (which is gitignored and
+not present in CI). The e2e job has its own `concurrency` group so two runs never
+truncate/reseed the shared test database at the same time. There is no security or
+performance suite in CI yet — see README for the plan to add them non-blocking/
+on-demand when they exist.
+
 Observability (OpenTelemetry -> Grafana Cloud; **off by default**, see `observability/README.md`):
 ```
 cp .env.otel.example .env.otel   # fill in OTEL_EXPORTER_OTLP_ENDPOINT/HEADERS from Grafana Cloud

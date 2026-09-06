@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lint-and-build:
+    name: Lint & build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.node-version'
+          cache: npm
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+
+  e2e:
+    name: E2E tests (Playwright)
+    runs-on: ubuntu-latest
+    needs: lint-and-build
+    # The suite truncates and reseeds a shared external test database on every run
+    # (tests/e2e/reset-db.js), so two runs must never execute concurrently against
+    # it — queue them instead of racing.
+    concurrency:
+      group: e2e-shared-test-database
+      cancel-in-progress: false
+    env:
+      DATABASE_URL: ${{ secrets.E2E_DATABASE_URL }}
+      BETTER_AUTH_SECRET: ${{ secrets.E2E_BETTER_AUTH_SECRET }}
+      BETTER_AUTH_URL: http://localhost:3100
+      PORT: 3100
+      VITE_HMR_PORT: 24679
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.node-version'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install Playwright Chromium + OS dependencies
+        run: npx playwright install --with-deps chromium
+
+      - name: Install Xvfb
+        run: sudo apt-get update && sudo apt-get install -y xvfb
+
+      # The suite runs headed (headless: false) by fixed policy — see tests/e2e/README.md —
+      # so it needs a virtual display in CI.
+      - name: Run E2E suite
+        run: xvfb-run --auto-servernum -- npm run test:e2e
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14
